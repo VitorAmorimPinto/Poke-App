@@ -1,6 +1,13 @@
 package com.smash.pokeapp;
 
-public class Treinador {
+import org.dizitart.no2.NitriteId;
+import org.dizitart.no2.objects.Id;
+
+import java.io.Serializable;
+
+public class Treinador implements Serializable {
+    @Id
+    public NitriteId id;
     private String nome, especialidade, genero, regiao;
     private int idade;
 

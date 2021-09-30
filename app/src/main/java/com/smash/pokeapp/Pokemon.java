@@ -1,6 +1,14 @@
 package com.smash.pokeapp;
 
-public class Pokemon {
+import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.NitriteId;
+import org.dizitart.no2.objects.Id;
+
+import java.io.Serializable;
+
+public class Pokemon implements Serializable {
+    @Id
+    public NitriteId id;
     private String nome, tipo, especie, habilidade;
     private double peso;
 
