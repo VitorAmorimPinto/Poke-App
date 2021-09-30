@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PokeApp</string>
+<!--Tela Atualizar Pokemons-->
+    <string name="titulo_atualizar_pokemon">Atualizar Pokémons</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_peso">Peso</string>
+    <string name="txt_tipo">Tipo</string>
+    <string name="txt_especie">Espécie</string>
+    <string name="txt_habilidade">Habilidade</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_excluir">Excluir</string>
+
 </resources>
