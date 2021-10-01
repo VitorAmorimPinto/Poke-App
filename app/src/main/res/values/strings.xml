@@ -9,5 +9,10 @@
     <string name="txt_habilidade">Habilidade</string>
     <string name="btn_salvar">Salvar</string>
     <string name="btn_excluir">Excluir</string>
+<!--Tela Exibir Pokémons-->
+    <string name="place_busca">Digite o nome do Pokémon</string>
+    <string name="btn_busca">Buscar</string>
+
+
 
 </resources>

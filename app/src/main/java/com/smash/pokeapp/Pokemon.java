@@ -62,4 +62,23 @@ public class Pokemon implements Serializable {
     public void setPeso(double peso) {
         this.peso = peso;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: "+nome+
+                " Espécie: "+especie+
+                " Tipo: " + tipo;
+    }
+
+//    @Override
+//    public String toString() {
+//        return "Pokemon{" +
+//                "id=" + id +
+//                ", nome='" + nome + '\'' +
+//                ", tipo='" + tipo + '\'' +
+//                ", especie='" + especie + '\'' +
+//                ", habilidade='" + habilidade + '\'' +
+//                ", peso=" + peso +
+//                '}';
+//    }
 }

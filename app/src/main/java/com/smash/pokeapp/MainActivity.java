@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         BaseDados.init(getFilesDir().getPath());
-        Intent i = new Intent(this, AtualizarPokemonActivity.class);
+        Intent i = new Intent(this,ExibirPokemonsActivity.class);
         startActivity(i);
     }
 }
