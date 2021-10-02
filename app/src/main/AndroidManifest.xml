@@ -11,6 +11,9 @@
         android:theme="@style/Theme.PokeApp">
         <activity android:name=".AtualizarPokemonActivity"></activity>
         <activity android:name=".ExibirPokemonsActivity" />
+		<activity
+            android:name=".CadastrarTreinadores"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
