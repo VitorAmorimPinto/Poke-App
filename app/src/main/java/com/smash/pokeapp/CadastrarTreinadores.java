@@ -21,7 +21,7 @@ public class CadastrarTreinadores extends AppCompatActivity {
         edtIdadeTreinador = findViewById(R.id.editTextIdadeCadTreinador);
         edtRegiaoTreinador = findViewById(R.id.editTextIdadeCadTreinador);
 
-        BaseDados.init(getFilesDir().getPath());
+//        BaseDados.init(getFilesDir().getPath());
 
     }
 
