@@ -8,12 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import org.dizitart.no2.FindOptions;
 import org.dizitart.no2.SortOrder;
+import org.dizitart.no2.objects.filters.ObjectFilters;
 
 import java.util.List;
 
@@ -21,6 +23,8 @@ public class ExibirPokemonsActivity extends AppCompatActivity {
     private Pokemon pokemon;
     private List<Pokemon> pokemons;
     ListView ListaPokemons;
+    EditText edtBusca;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +51,6 @@ public class ExibirPokemonsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 pokemon = pokemons.get(i);
                 enviarDados(pokemon);
-//                Log.i("Dados: ", pokemon.toString());
 
             }
         });
@@ -62,11 +65,11 @@ public class ExibirPokemonsActivity extends AppCompatActivity {
             pokemon = new Pokemon();
 
         }
-        pokemon.setEspecie("Ratão");
-        pokemon.setHabilidade("Choque do trovão");
-        pokemon.setNome("picachu");
+        pokemon.setEspecie("sdsd");
+        pokemon.setHabilidade("aaa");
+        pokemon.setNome("Tartaruga");
         pokemon.setPeso(25.5);
-        pokemon.setTipo("Relampago");
+        pokemon.setTipo("agasgasg");
         try {
             if (pokemon.id == null) {
                 BaseDados.rPokemon.insert(pokemon);
