@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarTreinadores">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fdghdfh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="4dp"
+        android:text="Cadastrar Pokemons"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNomePokemon"
+        app:layout_constraintStart_toStartOf="@+id/textViewNomePokemon"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewNomePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Nome:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNomeCadPokemon"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeCadPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewPesoPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Peso:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPesoCadPokemon"
+        app:layout_constraintStart_toStartOf="@+id/editTextPesoCadPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeCadPokemon" />
+
+    <TextView
+        android:id="@+id/textViewTipoPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="12dp"
+        android:text="Tipo:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTipoCadPokemon"
+        app:layout_constraintStart_toStartOf="@+id/editTextTipoCadPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPesoCadPokemon" />
+
+    <TextView
+        android:id="@+id/textViewEspeciePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Espécie"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEspecieCadPokemon"
+        app:layout_constraintStart_toStartOf="@+id/editTextEspecieCadPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTipoCadPokemon" />
+
+    <TextView
+        android:id="@+id/textViewHabilidadePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="20dp"
+        android:text="Habilidade:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextHabilidadeCadPokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEspecieCadPokemon" />
+
+    <EditText
+        android:id="@+id/editTextNomeCadPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPesoPokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomePokemon" />
+
+    <EditText
+        android:id="@+id/editTextTipoCadPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEspeciePokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoPokemon" />
+
+    <EditText
+        android:id="@+id/editTextHabilidadeCadPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCadTreinador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHabilidadePokemon" />
+
+    <EditText
+        android:id="@+id/editTextEspecieCadPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHabilidadePokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEspeciePokemon" />
+
+    <EditText
+        android:id="@+id/editTextPesoCadPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTipoPokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPesoPokemon" />
+
+    <Button
+        android:id="@+id/buttonCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="cadastrarTreinador"
+        android:text="Cadastrar Pokémon"
+        app:backgroundTint="#3b4cca"
+        app:icon="@drawable/pokebola"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="@color/azulbotao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHabilidadeCadPokemon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
