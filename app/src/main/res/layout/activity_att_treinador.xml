@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="salvarAtualizacao"
     tools:context=".AttTreinadorActivity">
 
     <ScrollView
@@ -28,6 +29,38 @@
             android:layout_height="727dp"
             tools:layout_editor_absoluteY="1dp">
 
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="excluirTreinador"
+                android:text="@string/excluirbt"
+                app:backgroundTint="#FF0000"
+                app:iconPadding="2dp"
+                app:iconSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                app:layout_constraintVertical_bias="0.07999998" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="salvarAtualizacao"
+                android:text="@string/atualizarbt"
+                app:backgroundTint="#3B4CCA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtGenero"
+                app:icon="@drawable/insignia_pokemon"
+                app:iconPadding="2dp"
+                app:iconSize="30dp"
+                app:iconTint="#ffde00"
+                />
+
             <EditText
                 android:id="@+id/edtGenero"
                 android:layout_width="wrap_content"
@@ -48,25 +81,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
-                android:text="Genero"
+                android:layout_marginTop="15dp"
+                android:text="Gênero"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtregiao" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtGenero"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/edtRegiao" />
 
             <EditText
-                android:id="@+id/edtregiao"
+                android:id="@+id/edtRegiao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -115,8 +137,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="45dp"
                 android:text="Nome:"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -128,8 +151,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:text="Tipo de Pokemon Preferido:"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -141,8 +165,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:text="Idade:"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -154,8 +179,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:text="Região:"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -184,6 +210,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/images__1_" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/atualizartreinadortitulo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

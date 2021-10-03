@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PokeApp">
         <activity
+            android:name=".ExibeTreinadoresActivity"
+            android:exported="true" />
+        <activity
             android:name=".AttTreinadorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadastrarTreinadores"
             android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>

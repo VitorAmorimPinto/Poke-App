@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarTreinadores">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_cadastro_treinadores" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="521dp"
+        android:text="Cadastro de Treinadores"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNomeCadTreinador"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewNomeCadTreinador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Nome:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNomeCadTreinador"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeCadTreinador"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewIdadeCadGeneroTreinador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Idade:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIdadeCadTreinador"
+        app:layout_constraintStart_toStartOf="@+id/editTextIdadeCadTreinador"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeCadTreinador" />
+
+    <TextView
+        android:id="@+id/textViewGeneroTreinador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="Gênero:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGeneroCadTreinador"
+        app:layout_constraintStart_toStartOf="@+id/editTextGeneroCadTreinador"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdadeCadTreinador" />
+
+    <TextView
+        android:id="@+id/textViewRegiaoTreinador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Região:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegiaoCadTreinador"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegiaoCadTreinador"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGeneroCadTreinador" />
+
+    <EditText
+        android:id="@+id/editTextNomeCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIdadeCadGeneroTreinador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeCadTreinador" />
+
+    <EditText
+        android:id="@+id/editTextGeneroCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRegiaoTreinador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGeneroTreinador" />
+
+    <EditText
+        android:id="@+id/editTextRegiaoCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCadTreinador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegiaoTreinador" />
+
+    <EditText
+        android:id="@+id/editTextIdadeCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGeneroTreinador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdadeCadGeneroTreinador" />
+
+    <Button
+        android:id="@+id/buttonCadTreinador"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="cadastrarTreinador"
+        android:text="Cadastrar Treinador"
+        app:backgroundTint="#3b4cca"
+        app:icon="@drawable/insignia_pokemon"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="#ffde00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegiaoCadTreinador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

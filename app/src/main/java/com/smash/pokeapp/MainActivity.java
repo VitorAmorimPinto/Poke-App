@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
         BaseDados.init(getFilesDir().getPath());
     }
 
-    public void abreTelaAttTreinador(View view) {
-        startActivity(new Intent(this, AttTreinadorActivity.class));
+    public void abreTelaTreinador(View view) {
+        startActivity(new Intent(this, CadastrarTreinadores.class));
+    }
+
+    public void abreTelaExibicao(View view) {
+        startActivity(new Intent(this, ExibeTreinadoresActivity.class));
     }
 }
