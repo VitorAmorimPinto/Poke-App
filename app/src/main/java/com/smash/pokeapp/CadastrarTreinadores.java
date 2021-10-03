@@ -19,7 +19,7 @@ public class CadastrarTreinadores extends AppCompatActivity {
         edtNomeTreinador = findViewById(R.id.editTextNomeCadTreinador);
         edtGeneroTreinador = findViewById(R.id.editTextGeneroCadTreinador);
         edtIdadeTreinador = findViewById(R.id.editTextIdadeCadTreinador);
-        edtRegiaoTreinador = findViewById(R.id.editTextIdadeCadTreinador);
+        edtRegiaoTreinador = findViewById(R.id.editTextRegiaoCadTreinador);
 
         BaseDados.init(getFilesDir().getPath());
 
@@ -33,6 +33,7 @@ public class CadastrarTreinadores extends AppCompatActivity {
             treinador.setGenero(edtGeneroTreinador.getText().toString());
             treinador.setIdade(Integer.parseInt(edtIdadeTreinador.getText().toString()));
             treinador.setRegiao(edtRegiaoTreinador.getText().toString());
+            treinador.setEspecialidade("Grama");
 
             BaseDados.rTreinador.insert(treinador);
             limpaInformacoes();
