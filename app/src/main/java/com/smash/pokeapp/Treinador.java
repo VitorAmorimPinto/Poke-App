@@ -61,4 +61,16 @@ public class Treinador implements Serializable {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString() {
+        return
+                "Nome: " + nome + " | " +
+                "Gênero: " + genero + " | "+
+                "Região: " + regiao +  " | " +
+                 "Especialidade: " + especialidade +  " | " +
+                 "Idade: " + idade +  " | "
+
+                ;
+    }
 }

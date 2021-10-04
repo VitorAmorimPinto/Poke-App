@@ -14,6 +14,12 @@
 		<activity
             android:name=".CadastrarTreinadores"
             android:exported="true" />
+             <activity
+            android:name=".ExibeTreinadoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AttTreinadorActivity"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
