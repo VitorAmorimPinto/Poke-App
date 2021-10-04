@@ -24,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,CadastrarTreinadores.class);
         startActivity(i);
     }
+    public void goToExibirTreinador(View view){
+        Intent i = new Intent(this,ExibeTreinadoresActivity.class);
+        startActivity(i);
+    }
+
 
 }
