@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,ExibeTreinadoresActivity.class);
         startActivity(i);
     }
+    public void goToCadastrarPokemon(View view){
+        Intent i = new Intent(this,CadastrarPokemons.class);
+        startActivity(i);
+    }
 
 
 }

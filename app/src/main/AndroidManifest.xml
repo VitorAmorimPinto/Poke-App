@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PokeApp">
-        <activity android:name=".AtualizarPokemonActivity"></activity>
+        <activity android:name=".CadastrarPokemons"></activity>
+        <activity android:name=".AtualizarPokemonActivity" />
         <activity android:name=".ExibirPokemonsActivity" />
-		<activity
+        <activity
             android:name=".CadastrarTreinadores"
             android:exported="true" />
-             <activity
+        <activity
             android:name=".ExibeTreinadoresActivity"
             android:exported="true" />
         <activity

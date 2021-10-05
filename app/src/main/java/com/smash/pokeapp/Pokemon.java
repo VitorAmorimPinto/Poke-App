@@ -65,20 +65,14 @@ public class Pokemon implements Serializable {
 
     @Override
     public String toString() {
-        return "Nome: "+nome+
-                " Espécie: "+especie+
-                " Tipo: " + tipo;
+        return
+                "Nome: " + nome + " | " +
+                        "Peso: " + peso + " | "+
+                        "Tipo: " + tipo +  " | " +
+                        "Espécie: " + especie +  " | " +
+                        "Habilidade: " + habilidade +  " | "
+
+                ;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Pokemon{" +
-//                "id=" + id +
-//                ", nome='" + nome + '\'' +
-//                ", tipo='" + tipo + '\'' +
-//                ", especie='" + especie + '\'' +
-//                ", habilidade='" + habilidade + '\'' +
-//                ", peso=" + peso +
-//                '}';
-//    }
 }

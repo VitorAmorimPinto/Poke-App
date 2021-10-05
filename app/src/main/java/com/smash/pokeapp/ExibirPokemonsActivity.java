@@ -30,7 +30,6 @@ public class ExibirPokemonsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exibir_pokemons);
         ListaPokemons = findViewById(R.id.ListaPokemons);
-//        this.salvar();
 
 
     }
@@ -60,25 +59,5 @@ public class ExibirPokemonsActivity extends AppCompatActivity {
         i.putExtra("pokemon",p);
         startActivity(i);
     }
-    public void salvar(){
-        if(pokemon == null){
-            pokemon = new Pokemon();
 
-        }
-        pokemon.setEspecie("sdsd");
-        pokemon.setHabilidade("aaa");
-        pokemon.setNome("Tartaruga");
-        pokemon.setPeso(25.5);
-        pokemon.setTipo("agasgasg");
-        try {
-            if (pokemon.id == null) {
-                BaseDados.rPokemon.insert(pokemon);
-                this.preencherLista();
-            } else {
-                BaseDados.rPokemon.update(pokemon);
-            }
-        }catch(Exception ex){
-            //exibir a exceção
-        }
-    }
 }
