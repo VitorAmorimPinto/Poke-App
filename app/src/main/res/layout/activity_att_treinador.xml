@@ -161,7 +161,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:text="Tipo de Pokemon Preferido:"
+                android:text="Especialidade:"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

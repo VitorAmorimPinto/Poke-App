@@ -22,5 +22,25 @@
     <string name="excluirbt">Excluir</string>
     <string name="atualizartreinadortitulo">Editar dados de Treinador</string>
 
+    <string-array name="especialidades">
+        <item>Planta</item>
+        <item>Fogo</item>
+        <item>Agua</item>
+        <item>Inseto</item>
+        <item>Normal</item>
+        <item>Venenoso</item>
+        <item>Eletrico</item>
+        <item>Terra</item>
+        <item>Lutador</item>
+        <item>Psiquico</item>
+        <item>Pedra</item>
+        <item>Voador</item>
+        <item>Fantasma</item>
+        <item>Gelo</item>
+        <item>Dragao</item>
+        <item>Metalico</item>
+        <item>Noturno</item>
+        <item>Fada</item>
+    </string-array>
 
 </resources>
